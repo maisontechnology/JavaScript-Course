@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Function With Return Value</title>
+</head>
+<body>
+
+    <h1>Function With Return Value</h1>
+
+    <script>
+function functionName(fname = "Maison", lname = "Technology"){
+    var a = fname + "-" + lname;
+return a;
+}
+var fn = functionName("Java", "Script");
+document.write(fn);
+
+document.write("<br>");
+
+function sum(math,eng,sc){
+    var s = math + eng + sc;
+    return s;
+}
+
+function percentage(tt){
+var per = tt/300 * 100;
+document.write(per);
+
+}
+var total = sum(70,70,70);
+percentage(total);
+
+// var total = sum(81,80,80);
+// document.write(total);
+
+
+    </script>
+    
+</body>
+</html>
