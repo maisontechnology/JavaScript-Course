@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Exercise 3</title>
+  </head>
+
+  <body>
+    <!-- <input type="text" placeholder="Enter first number" id="value1" />
+    <input type="text" placeholder="Enter second number" id="value2" />
+    <br />    
+    <button onclick="myFunction()">Try it</button>
+    <br /><br />
+    <h4 id="result"></h4> -->
+
+    <!-- <input type="tel" placeholder="Enter first number" id="value5">
+    <input type="tel" placeholder="Enter first number" id="value6">
+    <input type="submit" placeholder="Submit" onclick="myFunction()">
+    <br>
+    <h4 id="result"></h4> -->
+
+
+<input type="number" placeholder="Enter first number" id="value1">
+<input type="number" placeholder="Enter second number" id="value2">
+<input type="submit" value="Submit" onclick="myFunction()">
+<h4 id="result"></h4>
+
+
+
+<script>
+function myFunction(){
+var val1 =document.getElementById("value1").value;
+var val2 =document.getElementById("value2").value;
+var mul = parseInt(val1) * parseInt(val2);
+console.log(typeof mul);
+document.getElementById("result").innerHTML=`Result is: ${mul}`;
+
+
+}
+
+
+
+
+
+/*
+function myFunction(){
+var val1 =document.getElementById("value1").value;
+var val2 =document.getElementById("value2").value;
+var result = parseInt(val1) * parseInt(val2);
+console.log(typeof result);
+document.getElementById("result").innerHTML=`Result is: ${result}`;
+}
+
+*/
+
+
+
+
+
+
+// function myFunction(){
+
+// var val7 = document.getElementById("value5").value;
+// var val8 = document.getElementById("value6").value;
+// var sum = parseInt(val7) + parseInt(val8);
+// console.log(typeof sum);
+// document.getElementById("result").innerHTML=`result is: ${sum}`;
+// }
+
+
+
+
+// function myFunction(){
+
+// var val7 = document.getElementById("value5").value;
+// var val8 = document.getElementById("value6").value;
+// var mul = parseInt(val7) * parseInt(val8);
+// console.log(typeof mul);
+// document.getElementById("result").innerHTML=`result is: ${mul}`;
+
+// }
+
+
+/*
+      function myFunction() {
+        var val1 = document.getElementById("value1").value;
+        var val2 = document.getElementById("value2").value;
+        var sum =parseInt(val1)  + parseInt(val2);
+        console.log(typeof sum);
+        document.getElementById("result").innerHTML=`Result is: ${sum}`;
+      }
+
+      */
+
+
+
+    </script>
+  </body>
+</html>
