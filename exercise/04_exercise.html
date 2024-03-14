@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <input type="text" placeholder="Enter first number" id="value1" />
+    <input type="text" placeholder="Enter second number" id="value2" />
+    <br />
+    <br />
+
+    <label for="add">Addition (+)</label>
+    <input type="radio" name="calc" id="add" value="+" />
+    <br />
+    <label for="sub">Subtraction (-)</label>
+    <input type="radio" name="calc" id="sub" value="-" />
+    <br />
+    <label for="mul">Multiplication (*)</label>
+    <input type="radio" name="calc" id="mul" value="*" />
+    <br />
+    <label for="div">Division (/)</label>
+    <input type="radio" name="calc" id="div" value="/" />
+    <br />
+    <label for="mod">Module (%)</label>
+    <input type="radio" name="calc" id="mod" value="%" />
+
+    <br /><br />
+    <button onclick="myCalculator()">Submit</button>
+    <br /><br />
+    <h3>Result is: <span id="result"></span></h3>
+
+    <script>
+      function myCalculator() {
+        var val1 = parseInt(document.getElementById("value1").value);
+        var val2 = parseInt(document.getElementById("value2").value);
+
+        var calc = document.querySelector('input[name="calc"]:checked').value;
+        let result;
+
+        switch (calc) {
+          case "+":
+            result = val1 + val2;
+            //
+            document.getElementById("result").innerHTML = result;
+            console.log([val1, val2]);
+            break;
+          case "-":
+            result = val1 - val2;
+            document.getElementById("result").innerHTML = result;
+            break;
+          case "*":
+            result = val1 * val2;
+            document.getElementById("result").innerHTML = result;
+            break;
+          case "/":
+            if (val2 != 0) {
+              result = val1 / val2;
+              document.getElementById("result").innerHTML = result;
+            } else {
+              document.getElementById(
+                "result"
+              ).innerHTML = `${val1} is not Divide By Zero`;
+            }
+
+            break;
+          case "%":
+            if (val2 != 0) {
+              result = val1 % val2;
+              document.getElementById("result").innerHTML = result;
+            } else {
+              document.getElementById(
+                "result"
+              ).innerHTML = `${val1} is not Module By Zero`;
+            }
+
+            break;
+          default:
+            document.getElementById("result").innerHTML = "Invalid operator";
+        }
+      }
+
+      // Creating two input fields
+      // Creating option arithmetics operator
+      // Creating submit button and result
+      // Create a function
+    </script>
+  </body>
+</html>
