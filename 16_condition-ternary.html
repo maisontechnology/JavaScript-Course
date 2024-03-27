@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Condition Ternary</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Condition Ternary</h1>
 
     <script>
-var a = 100;
-var b;
-(a == 100)? b = "True" : b = "False";
-document.write(b);
+      var a = 100;
+      var b;
+      a == 100 ? (b = "True") : (b = "False");
+      document.write(b);
 
-document.write("<br>");
+      document.write("<br>");
 
-var a = 100;
-var b;
-(a == 200)? b = "True" : b = "False";
-document.write(b);
+      var a = 100;
+      var b;
+      a == 200 ? (b = "True") : (b = "False");
+      document.write(b);
 
-document.write("<br>");
+      document.write("<br>");
 
-var a = 100;
-var b;
-b = (a == 200)? "True" : "False";
-document.write(b);
+      var a = 100;
+      var b;
+      b = a == 200 ? "True" : "False";
+      document.write(b);
 
-document.write("<br>");
+      document.write("<br>");
 
-var a = 100;
-var b;
-b = (a == 100)? "True" : "False";
-document.write(b);
+      var a = 100;
+      var b;
+      b = a == 100 ? "True" : "False";
+      document.write(b);
 
-document.write("<br>");
+      document.write("<br>");
 
-var c = 100;
-var d;
-d = "Value is " + (c == 100 ? "True" : "False");
-document.write(d);
+      var c = 100;
+      var d;
+      d = "Value is " + (c == 100 ? "True" : "False");
+      document.write(d);
 
-var c = 100;
-var d;
-d = "Value is " + (c < 110 ? "True" : "False");
-document.write(d);
-
-
+      var c = 100;
+      var d;
+      d = "Value is " + (c < 110 ? "True" : "False");
+      document.write(d);
     </script>
-    
-</body>
+  </body>
 </html>
